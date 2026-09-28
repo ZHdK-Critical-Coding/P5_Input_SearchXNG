@@ -14,13 +14,11 @@ Voraussetzungen: eine laufende [SearXNG](https://docs.searxng.org)-Instanz,
 die vom eigenen Computer aus erreichbar ist, mit aktiviertem JSON-Format und
 CORS-Headern (siehe unten).
 
-1. `SEARCH_URL` oben in `sketch.js` auf die eigene Instanz setzen:
-   ```js
-   const SEARCH_URL = "http://brian3.hermi.lan:8888/search?q=";
-   ```
-2. Den Ordner in Visual Studio Code öffnen und Live Server starten (in der
-   Statusleiste auf **Go Live** klicken).
-3. Einen Suchbegriff eingeben und auf **Search** klicken oder Enter drücken.
+`SEARCH_URL` oben in `sketch.js` auf die eigene Instanz setzen:
+
+```js
+const SEARCH_URL = "http://brian3.hermi.lan:8888/search?q=";
+```
 
 ### SearXNG-Konfiguration
 
@@ -45,6 +43,12 @@ add_header Access-Control-Allow-Origin *;
 
 Bibliotheken (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (eingebunden,
 nicht verwendet).
+
+## Ausführen
+
+1. Den Ordner in Visual Studio Code öffnen und Live Server starten (in der
+   Statusleiste auf **Go Live** klicken).
+2. Einen Suchbegriff eingeben und auf **Search** klicken oder Enter drücken.
 
 ## Coding-Hilfe
 
